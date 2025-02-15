@@ -21,9 +21,3 @@ USER codespace
 
 # Set working directory
 WORKDIR /workspace
-
-# Verify installations
-RUN . "$NVM_DIR/nvm.sh" && \
-    echo "Node Version Manager: $(nvm --version)" && \
-    echo "Bun Version: $(bun --version)" && \
-    echo "UV Version: $(uv --version)"
