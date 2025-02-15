@@ -10,9 +10,6 @@ RUN curl -LsSf https://astral.sh/uv/install.sh | sh
 
 USER codespace
 
-RUN nvm install 22.10.0
-RUN nvm alias default 22.10.0
-RUN nvm use default
 
 ENV PATH="/home/codespace/.bun/bin:$PATH"
 ENV PATH="/home/codespace/.local/bin:$PATH"
