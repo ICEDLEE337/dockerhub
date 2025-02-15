@@ -2,7 +2,12 @@
   "name": "@dockerhub/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "deploy": "bun run ./tools/scripts/index.ts",
+    "deploy:bun": "bun run ./tools/scripts/index.ts devcontainers/bun",
+    "deploy:node": "bun run ./tools/scripts/index.ts devcontainers/node",
+    "deploy:gp": "bun run ./tools/scripts/index.ts devcontainers/general-purpose"
+  },
   "private": true,
   "dependencies": {},
   "devDependencies": {
