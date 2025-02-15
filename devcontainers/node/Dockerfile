@@ -7,9 +7,8 @@ RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | b
 # Install Bun
 RUN curl -fsSL https://bun.sh/install | bash
 
-# Install UV with proper permissions
-RUN curl -LsSf https://astral.sh/uv/install.sh | sh && \
-    chmod -R 777 /root/.cargo
+# Install UV using pip
+RUN pip install uv
 
 # Set up environment variables
 ENV NVM_DIR=/root/.nvm
