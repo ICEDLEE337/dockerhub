@@ -16,8 +16,5 @@ ENV BUN_PATH=/root/.bun
 ENV PATH="${BUN_PATH}/bin:${PATH}"
 ENV PATH="/home/codespace/.local/bin:${PATH}"
 
-# Switch to non-root user
-USER codespace
-
 # Set working directory
 WORKDIR /workspace
