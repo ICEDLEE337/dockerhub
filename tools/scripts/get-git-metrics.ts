@@ -1,7 +1,7 @@
 import { $ } from 'bun';
 
 export const getGitMetrics = async () => {
-    const _hash = await $`git rev-parse --short=12 head`;
+    const _hash = await $`git rev-parse --short=12 HEAD`;
     const hash = _hash.text().replace('\n', '');
     let clean: boolean | null = null;
 
