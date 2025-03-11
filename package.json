@@ -6,6 +6,7 @@
     "deploy": "bun run ./tools/scripts/index.ts",
     "deploy:bun": "bun run ./tools/scripts/index.ts devcontainers/bun",
     "deploy:node": "bun run ./tools/scripts/index.ts devcontainers/node",
+    "deploy:mc": "bun run ./tools/scripts/index.ts minecraft/custom",
     "deploy:gp": "bun run ./tools/scripts/index.ts devcontainers/general-purpose"
   },
   "private": true,
