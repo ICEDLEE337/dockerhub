@@ -4,11 +4,11 @@ FROM ubuntu:24.04
 # Set environment variables for customization
 ENV MINECRAFT_VERSION=1.20.4
 ENV MEMORY=2G
-ENV SERVER_TYPE=paper  # Options: vanilla, paper, spigot, forge
+ENV SERVER_TYPE=paper
 ENV ENABLE_COMMAND_BLOCKS=true
 ENV SPAWN_PROTECTION=0
 ENV DIFFICULTY=normal
-ENV MODE=survival
+ENV MODE=creative
 
 # Update package list and install required packages
 RUN apt-get update && apt-get install -y \
